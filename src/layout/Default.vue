@@ -5,8 +5,8 @@
 </template>
 <script>
 import gsap from 'gsap';
-import SmoothScroll from 'smooth-scroll';
-import ScrollOut from "scroll-out";
+// import SmoothScroll from 'smooth-scroll';
+// import ScrollOut from "scroll-out";
 
 export default {
  data() {
@@ -21,18 +21,18 @@ export default {
   },
   mounted() {
     this.scrollContent();
-    ScrollOut({
-      onShown: function(el) {
-        // remove the class
-        el.classList.remove("animated");
+    // ScrollOut({
+    //   onShown: function(el) {
+    //     // remove the class
+    //     el.classList.remove("animated");
 
-        // force reflow
-        void el.offsetWidth;
+    //     // force reflow
+    //     void el.offsetWidth;
 
-        // re-add the animated cl
-        el.classList.add("animated");
-      }
-    });
+    //     // re-add the animated cl
+    //     el.classList.add("animated");
+    //   }
+    // });
   },
   methods: {
     scrollContent() {
