@@ -25,7 +25,7 @@
             </ul>
         </div>
         <div class="flex items-center">
-              <a href="/resume.pdf" class="btn">
+              <a download="Abdullah Resume" href="/resume.pdf" class="btn">
                 <i class="animation"></i>
                 <div class="svg-wrapper-1">
                     <div class="svg-wrapper">
