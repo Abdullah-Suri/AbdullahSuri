@@ -1,6 +1,6 @@
 <template>
-    <div class="h-screen w-screen shrink-0 lg:mb-0 mb-44 px-4">
-        <div class="flex flex-col justify-center items-center h-screen text-white pointer-events-none testing_animation">
+    <div class="sm:h-screen h-auto w-screen shrink-0 lg:mb-0 sm:mb-44 mt-54 px-4">
+        <div class="flex flex-col justify-center items-center sm:h-screen h-[80vh] sm:my-0 my-20 text-white pointer-events-none testing_animation">
             <div class="lg:text-[150px] md:text-[130px] sm:text-[110px] text-6xl font-bold hero_text">
                 <h1 class="leading-none animate__animated animate__fadeInUp hero_top_slow">Hello<span class="text-primary changed_hero_text">,</span></h1>
                 <div class="flex items-center gap-10">

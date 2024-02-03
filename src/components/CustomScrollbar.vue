@@ -92,6 +92,27 @@
           });
         }
       },
+      scrollToHome() {
+        const $scrollContainer = this.$jQuery(this.$refs.scrollContainer);
+          $scrollContainer.mCustomScrollbar("scrollTo",1,{
+              moveDragger:true
+          });
+          console.log($scrollContainer.scrollAmount);
+      },
+      scrollToAbout() {
+        const $scrollContainer = this.$jQuery(this.$refs.scrollContainer);
+          $scrollContainer.mCustomScrollbar("scrollTo",600,{
+              moveDragger:true
+          });
+          console.log($scrollContainer.scrollAmount);
+      },
+      scrollToPortfolio() {
+        const $scrollContainer = this.$jQuery(this.$refs.scrollContainer);
+          $scrollContainer.mCustomScrollbar("scrollTo",1100,{
+              moveDragger:true
+          });
+          console.log($scrollContainer.scrollAmount);
+      },
     },
   };
   </script>

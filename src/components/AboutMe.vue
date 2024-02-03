@@ -1,17 +1,17 @@
 <template>
-    <div class="h-screen w-screen shrink-0 lg:my-0 my-44 px-4">
+    <div class="sm:h-screen h-auto xl:w-screen shrink-0 xl:mx-0 mx-44 lg:my-0 my-20 px-4">
         <div class="flex justify-center items-center h-screen text-white ">
             <div class="flex justify-center lg:items-center lg:flex-row flex-col lg:gap-28 gap-16 shrink-0">
-                <div class="relative shine rounded-2xl trigger-element w-full lg:max-w-[360px] md:max-w-[450px] sm:max-w-[350px] ml-10" :style="{ boxShadow: boxShadow }">
+                <div class="relative shine rounded-2xl trigger-element w-full lg:max-w-[360px] md:max-w-[350px] sm:max-w-[350px] max-w-[300px] sm:ml-10 ml-4" :style="{ boxShadow: boxShadow }">
                     <div class="absolute inset-0 w-full h-full bg-black/45 rounded-2xl"></div>
-                    <img src="../assets/abdullah-img.jpg" class="lg:max-w-[660px] md:max-w-[450px] sm:max-w-[350px] w-full objec-cover"   alt="">
+                    <img src="../assets/abdullah-img.jpg" class="lg:max-w-[660px] md:max-w-[450px] sm:max-w-[350px] max-w-[300px] w-full objec-cover"   alt="">
                 </div>
                 <div>
-                    <div class="text-[65px] font-bold leading-[1.2em] ">
-                        <h4 class="relative w-fit z-[1] before:absolute before:left-3 before:top-3 before:w-52 before:h-[4rem] before:bg-[#fa5b0f]/50 before:-skew-x-[36deg] before:z-[-1]">Muhammad</h4>
-                        <h3 class="text-[70px]">Abdullah Suri</h3>
+                    <div class="sm:text-[65px] text-[50px] font-bold leading-[1.2em] ">
+                        <h4 class="relative w-fit z-[1] before:absolute before:left-3 before:top-3 before:w-52 sm:before:h-[4rem] before:h-[3rem] before:bg-[#fa5b0f]/50 before:-skew-x-[36deg] before:z-[-1]">Muhammad</h4>
+                        <h3 class="sm:text-[70px]">Abdullah Suri</h3>
                     </div>
-                    <div class="flex gap-12 mt-12">
+                    <div class="sm:flex gap-12 mt-12">
                         <ul class="space-y-3 text-lg">
                             <li class="flex items-center gap-4">
                                 <span class="block w-1.5 h-1.5 rounded-full bg-primary"></span>

@@ -1,10 +1,10 @@
 <template>
-  <Header />
-  <CustomScrollbar class="!h-screen">
-    <div ref="" id="smooth-wrapper" class="flex lg:flex-row flex-col lg:whitespace-nowrap min-h-screen">
+  <Header @scrollIntoView="scrollToElement" />
+  <CustomScrollbar ref="scrollElement" class="!h-screen">
+    <div id="smooth-wrapper" class="flex lg:flex-row flex-col lg:whitespace-nowrap min-h-screen">
       <div id="particles-js" class="absolute top-0 left-0 lg:h-full max-lg:h-screen max-lg:w-full"></div>
-        <HeroSection />
-        <AboutMe />
+        <HeroSection/>
+        <AboutMe/>
         <Portfolio/>
         <!-- <section class="scroll-container h-auto w-screen shrink-0 bg-red-400"></section>
         <section class="scroll-container h-auto w-screen shrink-0 bg-blue-400"></section>
@@ -39,7 +39,27 @@ export default {
     HeroSection,
     AboutMe,
     Portfolio,
-  }
+  },
+  methods: {
+    scrollToElement(section) {
+      console.log("call hua hai",section);
+      const scrollElement = this.$refs['scrollElement'];
+      switch (section) {
+        case 'home':
+          scrollElement.scrollToHome();
+          break;
+        case 'about':
+          scrollElement.scrollToAbout();
+          break;
+        case 'portfolio':
+          scrollElement.scrollToPortfolio();
+          break;
+      
+        default:
+          break;
+      }
+    },
+  },
 };
 </script>
 
