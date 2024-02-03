@@ -1,8 +1,8 @@
 <template>
   <Header />
   <CustomScrollbar class="!h-screen">
-    <div ref="" id="smooth-wrapper" class="flex flex-row whitespace-nowrap min-h-screen">
-      <div id="particles-js" class="absolute top-0 left-0 h-full"></div>
+    <div ref="" id="smooth-wrapper" class="flex lg:flex-row flex-col lg:whitespace-nowrap min-h-screen">
+      <div id="particles-js" class="absolute top-0 left-0 lg:h-full max-lg:h-screen max-lg:w-full"></div>
         <HeroSection />
         <AboutMe />
         <Portfolio/>

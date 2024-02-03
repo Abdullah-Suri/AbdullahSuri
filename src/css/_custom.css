@@ -2,6 +2,7 @@ body {
     font-family: 'Livvic', sans-serif;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    background-color: black;
 }
 ::selection{
     color: rgba(168, 168, 168, 0.466);
@@ -142,3 +143,119 @@ body {
     border-radius: 10px;
 }
 /* ============ Portfolio Projects End ============= */
+
+/* ============ Custom ScrollBar ============= */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger{
+    width: 30px !important;
+ }
+ .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-dark-thin.mCSB_scrollTools .mCSB_draggerRail, .mCSB_dragger_bar:hover, .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar{
+    background-color: transparent;
+ }
+ .mCSB_dragger_bar:hover{
+    background: transparent;
+ }
+.mCustomScrollBox+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    bottom: 26px !important;
+}
+.mCSB_dragger_bar:before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: 0;
+    width: 50px;
+    height: 8px;
+    border-radius: 4px;
+    transition: 0.3s;
+    background-color: #fa5b0f !important; 
+}
+.mCSB_dragger_bar:after {
+    position: absolute;
+    content: "Scroll";
+    text-align: center;
+    color: #fa5b0f;
+    font-weight: 600;
+    font-size: 13px;
+    height: 22px;
+    width: 44px;
+    top: -30px;
+    left: 0;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+  .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    max-width: calc(100vw - 300px) !important;
+    margin: 0 auto !important;
+    bottom: 32px !important;
+    z-index: 11 !important;
+    opacity: 1 !important;
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: auto !important;
+}
+  .custom-scrollbar {
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .scroll-content {
+    white-space: nowrap;
+  }
+  .scroll-progress {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 32px;
+    z-index: 1;
+    width: calc(100vw - 300px);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.scroll-progress > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.scroll-progress > div > div {
+    height: 8px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 4px;
+}
+/* ============ Custom ScrollBar End ============= */
+
+/* ============ Media Querries ============= */
+@media only screen and (max-width: 1023px) {
+    body,html {
+        overflow-y: auto;
+    }
+    .mCSB_outside+.mCSB_scrollTools{
+        right: 25px;
+    }
+    .mCSB_dragger_bar:before{
+        top: 30px;
+        height: 5px;
+        transform: rotate(90deg);
+    }
+    .mCSB_dragger_bar:after{
+        display: none;
+    }
+    .mCSB_scrollTools .mCSB_dragger{
+        height: 0px !important;
+    }
+}
+@media only screen and (max-width:450px) {
+    .hero_text{
+        letter-spacing: 7px !important;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-stroke-color: #333;
+        text-shadow: 15px 15px #fff, 20px 20px #2c2c2c !important;
+    }
+}
+/* ============ Media Querries End ============= */

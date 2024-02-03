@@ -1,8 +1,8 @@
 <template>
-    <div class="bg-black w-screen shrink-0">
+    <div class="w-screen shrink-0 lg:my-0 my-44 px-4">
         <div class="flex flex-col items-center justify-center h-full">
                 <h4 class="text-white text-[65px] font-bold leading-[1.2em] capitalize heading_style">Projects i Made</h4>
-                <div class="flex gap-5 my-10">
+                <div class="flex flex-wrap gap-5 my-10">
                     <a href="https://physicianux.com/" target="_blank">
                         <div class="w-full max-w-[350px] hover:bg-bottom transition-all duration-[5s] h-full project_01 border-[#fa5b0f]/60">
                             <div class="portfolio-overlay group overflow-hidden">

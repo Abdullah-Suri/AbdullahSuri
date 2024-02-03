@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-black h-screen w-screen shrink-0">
+    <div class="h-screen w-screen shrink-0 lg:my-0 my-44 px-4">
         <div class="flex justify-center items-center h-screen text-white ">
-            <div class="flex justify-center items-center gap-28">
-                <div class="relative shine rounded-2xl trigger-element" :style="{ boxShadow: boxShadow }">
+            <div class="flex justify-center lg:items-center lg:flex-row flex-col lg:gap-28 gap-16 shrink-0">
+                <div class="relative shine rounded-2xl trigger-element w-full lg:max-w-[360px] md:max-w-[450px] sm:max-w-[350px] ml-10" :style="{ boxShadow: boxShadow }">
                     <div class="absolute inset-0 w-full h-full bg-black/45 rounded-2xl"></div>
-                    <img src="../assets/abdullah-img.jpg" class="max-w-[360px] objec-cover"   alt="">
+                    <img src="../assets/abdullah-img.jpg" class="lg:max-w-[660px] md:max-w-[450px] sm:max-w-[350px] w-full objec-cover"   alt="">
                 </div>
                 <div>
                     <div class="text-[65px] font-bold leading-[1.2em] ">

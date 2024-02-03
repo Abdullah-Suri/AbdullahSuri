@@ -1,14 +1,14 @@
 <template>
-    <div class="bg-black h-screen w-screen shrink-0">
+    <div class="h-screen w-screen shrink-0 lg:mb-0 mb-44 px-4">
         <div class="flex flex-col justify-center items-center h-screen text-white pointer-events-none testing_animation">
-            <div class="text-[150px] font-bold leading-0 hero_text">
+            <div class="lg:text-[150px] md:text-[130px] sm:text-[110px] text-6xl font-bold hero_text">
                 <h1 class="leading-none animate__animated animate__fadeInUp hero_top_slow">Hello<span class="text-primary changed_hero_text">,</span></h1>
                 <div class="flex items-center gap-10">
                     <h2 class="leading-none animate__animated animate__fadeInUp hero_mid_slow">I am</h2>
-                    <div class="flex flex-col mt-10">
-                        <span class="relative inline w-fit text-[17px] whitespace-normal tracking-wider leading-relaxed h-auto font-medium removed_hero_text z-[1] before:absolute before:bottom-[3px] before:left-0 before:h-[4px] before:w-full before:bg-[#fa5b0f]/60 before:z-[-1] animate__animated animate__lightSpeedInRight">Front-end Developer </span>
-                        <span class="relative inline w-fit text-[17px] whitespace-normal tracking-wider leading-relaxed h-auto font-medium removed_hero_text z-[1] before:absolute before:bottom-[3px] before:left-0 before:h-[4px] before:w-full before:bg-[#fa5b0f]/60 before:z-[-1] animate__animated animate__lightSpeedInRight">with 1+ years of experience</span>
-                        <span class="relative inline w-fit text-[17px] whitespace-normal tracking-wider leading-relaxed h-auto font-medium removed_hero_text z-[1] before:absolute before:bottom-[3px] before:left-0 before:h-[4px] before:w-full before:bg-[#fa5b0f]/60 before:z-[-1] animate__animated animate__lightSpeedInRight">based in Pakistan</span>
+                    <div class="flex flex-col sm:mt-10 mt-8">
+                        <span class="relative inline w-fit sm:text-[17px] text-[10px] whitespace-normal tracking-wider leading-relaxed h-auto font-medium removed_hero_text z-[1] sm:before:absolute before:bottom-[3px] before:left-0 before:h-[4px] before:w-full before:bg-[#fa5b0f]/60 before:z-[-1] animate__animated animate__lightSpeedInRight">Front-end Developer </span>
+                        <span class="relative inline w-fit sm:text-[17px] text-[10px] whitespace-normal tracking-wider leading-relaxed h-auto font-medium removed_hero_text z-[1] sm:before:absolute before:bottom-[3px] before:left-0 before:h-[4px] before:w-full before:bg-[#fa5b0f]/60 before:z-[-1] animate__animated animate__lightSpeedInRight">with 1+ years of experience</span>
+                        <span class="relative inline w-fit sm:text-[17px] text-[10px] whitespace-normal tracking-wider leading-relaxed h-auto font-medium removed_hero_text z-[1] sm:before:absolute before:bottom-[3px] before:left-0 before:h-[4px] before:w-full before:bg-[#fa5b0f]/60 before:z-[-1] animate__animated animate__lightSpeedInRight">based in Pakistan</span>
                     </div>
                 </div>
                 <h3 class="leading-none animate__animated animate__fadeInUp hero_high_slow">Abdullah</h3>
