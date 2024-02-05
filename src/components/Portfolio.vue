@@ -15,7 +15,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="sm:order-2 lg:block sm:flex items-center gap-3">
+                    <div class="sm:order-2 lg:order-none lg:block sm:flex items-center gap-3">
                         <a href="https://interactive-keyboard.netlify.app" target="_blank">
                             <div class="w-full lg:max-w-[350px] max-w-[300px] lg:hover:bg-bottom transition-all duration-[5s] max-h-[215px] project_03 border border-[#fa5b0f]/60">
                                 <div class="portfolio-overlay group overflow-hidden">
