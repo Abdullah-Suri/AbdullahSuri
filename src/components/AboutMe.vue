@@ -1,5 +1,5 @@
 <template>
-    <div class="sm:h-screen h-auto xl:w-screen shrink-0 xl:mx-0 mx-44 lg:my-0 my-20 px-4">
+    <div class="sm:h-screen h-auto xl:w-screen shrink-0 xl:mx-0 sm:mx-44 lg:my-0 my-20 px-4">
         <div class="flex justify-center items-center h-screen text-white ">
             <div class="flex justify-center lg:items-center lg:flex-row flex-col lg:gap-28 gap-16 shrink-0">
                 <div class="relative shine rounded-2xl trigger-element w-full lg:max-w-[360px] md:max-w-[350px] sm:max-w-[350px] max-w-[300px] sm:ml-10 ml-4" :style="{ boxShadow: boxShadow }">

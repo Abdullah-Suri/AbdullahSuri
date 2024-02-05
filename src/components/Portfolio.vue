@@ -1,5 +1,5 @@
 <template>
-    <div class="xl:w-screen shrink-0 lg:my-0 my-5 px-4">
+    <div class="xl:w-screen shrink-0 lg:my-0 my-44 px-4">
         <div class="flex flex-col items-center justify-center h-full">
                 <h4 class="text-white sm:text-[65px] text-5xl font-bold leading-[1.2em] capitalize heading_style">Projects i Made</h4>
                 <div class="flex justify-center lg:flex-nowrap flex-wrap lg:gap-5 gap-3 my-10">

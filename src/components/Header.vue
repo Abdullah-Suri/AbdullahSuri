@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed  w-screen h-fit sm:p-7 p-5 z-20 text-white">
+    <div class="fixed w-screen h-fit sm:p-7 p-5 z-20 text-white">
         <div class="sm:flex hidden items-center justify-between">
             <div>
                 <ul class="flex text-lg gap-6 font-medium ">
@@ -44,9 +44,9 @@
             </div>
             <div v-if="showHideMenu">
                 <div ref="sideMenu" class="absolute right-0 top-0 w-screen h-screen bg-[#1A1A1A] transition-all duration-300 animate__animated animate__faster animate__fadeInRight">
-                    <div @click="toggleSideMenu()" class="flex justify-end p-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg>
-                    </div>
+                        <div @click="toggleSideMenu()" class="absolute w-full h-auto flex justify-end p-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg>
+                        </div>
                         <ul class="flex flex-col  justify-center items-center h-full text-3xl gap-6 font-medium ">
                             <li>
                                 <button class="relative inline-flex items-center leading-6 align-middle border-none 
