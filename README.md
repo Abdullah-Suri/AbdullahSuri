@@ -1,7 +1,26 @@
-# Vue 3 + Vite
+# Personal Portfolio: Front-End Developer
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+My personal (Front-End Developer) portfolio for showcasing my projects
 
-## Recommended IDE Setup
+## Description
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Welcome to my personal portfolio repository! This project showcases my skills, experiences, and projects as a front-end developer. As a passionate developer, I strive to create engaging and user-friendly web experiences through my work.
+
+## How To Use
+
+To clone and run this application, you'll need Git and Node.js (which comes With npm) installed on your computer.
+from your command line:
+```
+# clone this repository
+$ git clone https://github.com/Abdullah-Suri/AbdullahSuri.git
+
+# Go into the repository
+$ cd AbdullahSuri
+
+# install dependencies
+$ npm install
+
+# Run the app
+$ npm run dev
+
+```
