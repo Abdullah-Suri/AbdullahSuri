@@ -1,24 +1,18 @@
 <template>
-  <Header @scrollIntoView="scrollToElement" />
-  <CustomScrollbar ref="scrollElement" class="!h-screen">
-    <div id="smooth-wrapper" class="flex lg:flex-row flex-col lg:whitespace-nowrap min-h-screen">
-      <div id="particles-js" class="absolute top-0 left-0 lg:h-full max-lg:h-screen max-lg:w-full"></div>
-        <HeroSection/>
-        <AboutMe/>
-        <Portfolio/>
-        <!-- <section class="scroll-container h-auto w-screen shrink-0 bg-red-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-blue-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-green-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-yellow-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-indigo-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-emerald-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-gray-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-pink-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-orange-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-cyan-400"></section>
-        <section class="scroll-container h-auto w-screen shrink-0 bg-emerald-400"></section> -->
-    </div>
-  </CustomScrollbar>
+  <div id="preloader" v-if="loading">
+    <div class="line"></div>
+  </div>
+  <div v-else>
+    <Header @scrollIntoView="scrollToElement" />
+    <CustomScrollbar ref="scrollElement" class="!h-screen">
+      <div id="smooth-wrapper" class="flex lg:flex-row flex-col lg:whitespace-nowrap min-h-screen">
+        <div id="particles-js" class="absolute top-0 left-0 lg:h-full max-lg:h-screen max-lg:w-full"></div>
+          <HeroSection/>
+          <AboutMe/>
+          <Portfolio/>
+      </div>
+    </CustomScrollbar>
+  </div>
 </template>
 
 <script>
@@ -30,8 +24,20 @@ import AboutMe from '../components/AboutMe.vue';
 import Portfolio from '../components/Portfolio.vue';
 
 export default {
+  data() {
+    return {
+      loading: true,
+    }
+  },
   mounted() {
     AOS.init();
+    setTimeout(() => {
+      const preLoader = document.getElementById('preloader')
+      preLoader.classList.add('preloaded')
+    }, 1000);
+    setTimeout(() => {
+      this.loading = false;
+    }, 1900);
   },
   components: {
     CustomScrollbar,
@@ -54,7 +60,6 @@ export default {
         case 'portfolio':
           scrollElement.scrollToPortfolio();
           break;
-      
         default:
           break;
       }

@@ -44,36 +44,36 @@
             </div>
             <div v-if="showHideMenu">
                 <div ref="sideMenu" class="absolute right-0 top-0 w-screen h-screen bg-[#1A1A1A] transition-all duration-300 animate__animated animate__faster animate__fadeInRight">
-                        <div @click="toggleSideMenu()" class="absolute w-full h-auto flex justify-end p-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg>
-                        </div>
-                        <ul class="flex flex-col  justify-center items-center h-full text-3xl gap-6 font-medium ">
-                            <li>
-                                <button class="relative inline-flex items-center leading-6 align-middle border-none 
-                                    after:content-[''] after:absolute after:h-[2px] after:w-0 hover:after:w-full after:end-0 hover:after:ti-auto after:-bottom-2 after:start-0 after:duration-500
-                                    hover:text-primary after:bg-primary duration-500">Home</button>
-                            </li>
-                            <li>
-                                <button class="relative inline-flex items-center leading-6 align-middle border-none 
-                                    after:content-[''] after:absolute after:h-[2px] after:w-0 hover:after:w-full after:end-0 hover:after:ti-auto after:-bottom-2 after:start-0 after:duration-500
-                                    hover:text-primary after:bg-primary duration-500">About</button>
-                            </li>
-                            <li>
-                                <button class="relative inline-flex items-center leading-6 align-middle border-none 
+                    <div @click="toggleSideMenu()" class="absolute w-full h-auto flex justify-end p-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg>
+                    </div>
+                    <ul class="flex flex-col  justify-center items-center h-full text-3xl gap-6 font-medium ">
+                        <li>
+                            <button class="relative inline-flex items-center leading-6 align-middle border-none 
                                 after:content-[''] after:absolute after:h-[2px] after:w-0 hover:after:w-full after:end-0 hover:after:ti-auto after:-bottom-2 after:start-0 after:duration-500
-                                hover:text-primary after:bg-primary duration-500">Portfolio</button>
-                            </li>
-                            <li>
-                                <button class="relative inline-flex items-center leading-6 align-middle border-none 
-                                    after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:ti-auto after:-bottom-2 after:start-0 after:duration-500
-                                    hover:text-primary after:bg-primary duration-500">Contact</button>
-                            </li>
-                            <li>
-                                <a download="Abdullah Resume" href="/resume.pdf" class="relative inline-flex items-center leading-6 align-middle border-none 
-                                    after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:ti-auto after:-bottom-2 after:start-0 after:duration-500
-                                    hover:text-primary after:bg-primary duration-500">Download Resume</a>
-                            </li>
-                        </ul>
+                                hover:text-primary after:bg-primary duration-500">Home</button>
+                        </li>
+                        <li>
+                            <button class="relative inline-flex items-center leading-6 align-middle border-none 
+                                after:content-[''] after:absolute after:h-[2px] after:w-0 hover:after:w-full after:end-0 hover:after:ti-auto after:-bottom-2 after:start-0 after:duration-500
+                                hover:text-primary after:bg-primary duration-500">About</button>
+                        </li>
+                        <li>
+                            <button class="relative inline-flex items-center leading-6 align-middle border-none 
+                            after:content-[''] after:absolute after:h-[2px] after:w-0 hover:after:w-full after:end-0 hover:after:ti-auto after:-bottom-2 after:start-0 after:duration-500
+                            hover:text-primary after:bg-primary duration-500">Portfolio</button>
+                        </li>
+                        <li>
+                            <button class="relative inline-flex items-center leading-6 align-middle border-none 
+                                after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:ti-auto after:-bottom-2 after:start-0 after:duration-500
+                                hover:text-primary after:bg-primary duration-500">Contact</button>
+                        </li>
+                        <li>
+                            <a download="Abdullah Resume" href="/resume.pdf" class="relative inline-flex items-center leading-6 align-middle border-none 
+                                after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:ti-auto after:-bottom-2 after:start-0 after:duration-500
+                                hover:text-primary after:bg-primary duration-500">Download Resume</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -87,9 +87,7 @@
                 showHideMenu: false,
             }
         },
-        mounted() {
-            console.log(this.showHideMenu);
-        },
+        mounted() {},
         methods: {
             toggleSideMenu() {
                 const { sideMenu } = this.$refs;
